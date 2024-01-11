@@ -1,0 +1,27 @@
+{
+  "name": "@nx-example/react-container",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "React: Container",
+  "sideEffects": false,
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0",
+    "@nx-example/types": "1.0.0"
+  },
+  "exports": {
+    "./index.css": "./index.css",
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    }
+  }
+}

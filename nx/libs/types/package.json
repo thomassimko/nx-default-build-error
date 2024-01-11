@@ -1,0 +1,26 @@
+{
+  "name": "@nx-example/types",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "dependencies": {
+
+  },
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "module": "./index.js",
+  "main": "./index.cjs",
+  "types": "./src/index.d.ts"
+}

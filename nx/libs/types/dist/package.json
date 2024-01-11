@@ -1,0 +1,25 @@
+{
+  "name": "@nx-example/types",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  },
+  "exports": {
+    ".": {
+      "module": "./index.esm.js",
+      "import": "./index.cjs.mjs",
+      "default": "./index.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "module": "./index.esm.js",
+  "main": "./index.cjs.js",
+  "types": "./src/index.d.ts"
+}

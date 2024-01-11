@@ -1,0 +1,34 @@
+{
+  "name": "react-container",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/container/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "libs/container/dist",
+        "outputFileName": "",
+        "tsConfig": "libs/container/tsconfig.lib.json",
+        "format": ["esm", "cjs"],
+        "project": "libs/container/package.json",
+        "entryFile": "libs/container/src/index.ts",
+        "external": ["react", "react-dom", "react/jsx-runtime"],
+        "rollupConfig": "rollup.config.js",
+        "compiler": "babel",
+        "extractCss": true,
+        "generateExportsField": true
+      },
+      "dependsOn": ["^build"]
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm publish",
+        "cwd": "libs/container/dist"
+      }
+    }
+  }
+}
