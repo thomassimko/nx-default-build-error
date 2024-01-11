@@ -1,0 +1,66 @@
+{
+	"name": "@nx-example/react-container",
+	"versions": {
+		"1.0.0": {
+			"name": "@nx-example/react-container",
+			"version": "1.0.0",
+			"type": "module",
+			"description": "React: Container",
+			"sideEffects": false,
+			"license": "MIT",
+			"publishConfig": {
+				"registry": "http://localhost:4873/"
+			},
+			"dependencies": {
+				"classnames": "^2.5.1"
+			},
+			"peerDependencies": {
+				"react": ">=16.14.0",
+				"react-dom": ">=16.14.0",
+				"@nx-example/types": "1.0.0"
+			},
+			"exports": {
+				"./index.css": "./index.css",
+				".": {
+					"module": "./index.esm.js",
+					"import": "./index.cjs.mjs",
+					"default": "./index.cjs.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"module": "./index.esm.js",
+			"main": "./index.cjs.js",
+			"_id": "@nx-example/react-container@1.0.0",
+			"gitHead": "c56db9bb90de7d04bdf9c524caccdf8b0bed5f8d",
+			"types": "./index.cjs.d.ts",
+			"_nodeVersion": "18.17.0",
+			"_npmVersion": "10.2.3",
+			"dist": {
+				"integrity": "sha512-uNPlid1sgNgAbKtOKxV8nQQ7cef1xfF6fhmGiwjz/t2OryCpOlIbzaklWmTD7JftjEClE3aIU2kt4VqoxM8JQQ==",
+				"shasum": "0fca3fd1c0da470e524e8f2f269debd2ca1772db",
+				"tarball": "http://localhost:4873/@nx-example/react-container/-/@nx-example/react-container-1.0.0.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2024-01-11T20:03:03.626Z",
+		"created": "2024-01-11T20:03:03.626Z",
+		"1.0.0": "2024-01-11T20:03:03.626Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.0"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"react-container-1.0.0.tgz": {
+			"shasum": "0fca3fd1c0da470e524e8f2f269debd2ca1772db",
+			"version": "1.0.0"
+		}
+	},
+	"_rev": "3-1ffa4e2d46dd9dd5",
+	"_id": "@nx-example/react-container",
+	"readme": "ERROR: No README data found!"
+}

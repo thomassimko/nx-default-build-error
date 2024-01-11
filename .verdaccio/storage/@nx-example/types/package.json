@@ -1,0 +1,60 @@
+{
+	"name": "@nx-example/types",
+	"versions": {
+		"1.0.0": {
+			"name": "@nx-example/types",
+			"version": "1.0.0",
+			"type": "module",
+			"license": "MIT",
+			"publishConfig": {
+				"registry": "http://localhost:4873/"
+			},
+			"dependencies": {},
+			"peerDependencies": {
+				"react": ">=16.14.0",
+				"react-dom": ">=16.14.0"
+			},
+			"exports": {
+				".": {
+					"module": "./index.esm.js",
+					"import": "./index.cjs.mjs",
+					"default": "./index.cjs.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"module": "./index.esm.js",
+			"main": "./index.cjs.js",
+			"types": "./src/index.d.ts",
+			"_id": "@nx-example/types@1.0.0",
+			"gitHead": "c56db9bb90de7d04bdf9c524caccdf8b0bed5f8d",
+			"_nodeVersion": "18.17.0",
+			"_npmVersion": "10.2.3",
+			"dist": {
+				"integrity": "sha512-9nZmkZm4d/8flgy758m0FgS/0e0DocrKtJDNPo88Dp/ERHBMezlSsNZa98B7cMyv5mvOCU/Fjli6GuNaYR1a5Q==",
+				"shasum": "7b95ed0e1bb2039e23f564a870e119e263cdc3f7",
+				"tarball": "http://localhost:4873/@nx-example/types/-/@nx-example/types-1.0.0.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2024-01-11T20:03:00.019Z",
+		"created": "2024-01-11T20:03:00.019Z",
+		"1.0.0": "2024-01-11T20:03:00.019Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.0"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"types-1.0.0.tgz": {
+			"shasum": "7b95ed0e1bb2039e23f564a870e119e263cdc3f7",
+			"version": "1.0.0"
+		}
+	},
+	"_rev": "3-27109c42b5c4cfb7",
+	"_id": "@nx-example/types",
+	"readme": "ERROR: No README data found!"
+}

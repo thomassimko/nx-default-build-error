@@ -1,0 +1,16 @@
+{
+  "name": "nx-repo",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "verdaccio": "verdaccio --config ./.verdaccio/config.yml "
+  },
+  "private": true,
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "verdaccio": "^5.21.1"
+  }
+}

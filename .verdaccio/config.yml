@@ -1,0 +1,38 @@
+storage: ./storage
+
+plugins: ./plugins
+
+web:
+  title: Verdaccio
+
+auth:
+  htpasswd:
+    file: ./htpasswd
+    algorithm: bcrypt
+
+uplinks:
+
+packages:
+  '@*/*':
+    access: $all
+    publish: $all
+    unpublish: $all
+
+  '**':
+    access: $all
+    publish: $all
+    unpublish: $all
+
+  '@nx-example/*':
+    access: $all
+    publish: $all
+    unpublish: $all
+
+server:
+  keepAliveTimeout: 60
+
+middlewares:
+  audit:
+    enabled: true
+
+logs: { type: stdout, format: pretty, level: error }
